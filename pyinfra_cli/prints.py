@@ -281,12 +281,7 @@ def print_results(state: "State"):
         (logger.info, ["Operation", "Hosts", "Success", "Error", "No Change"]),
     ]
 
-    totals = {
-        "hosts": 0,
-        "success": 0,
-        "error": 0,
-        "no_change": 0
-    }
+    totals = {"hosts": 0, "success": 0, "error": 0, "no_change": 0}
 
     for op_hash in state.get_op_order():
         hosts_in_op = 0
